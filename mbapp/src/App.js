@@ -1,44 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Button from '@material-ui/core/Button';
+import NavBar from './NavBar/NavBar';
+import FoodThemes from './FoodThemes/FoodThemes';
 
 class App extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: 0,
-      results: []
-    };
-  }
-
   render() {
-
-    function App() {
-      return (
-        <Button variant="contained" color="primary">
-          Hello World
-        </Button>
-      );
-    }
-
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <NavBar/>
+        <div> . </div>
+        <div> . </div>
+        <div> . </div>
+        <FoodThemes/>
+        <p>Work in progress.</p>
       </div>
     );
   }
