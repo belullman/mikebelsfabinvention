@@ -10,70 +10,64 @@ return (
       <div className="row"></div>
       <CardColumns>
          <Card border="primary" style={{ width: '18rem' }}>
-         <Card.Header>Header</Card.Header>
+         <Card.Header>Italian Cuisine</Card.Header>
          <Card.Body>
-            <Card.Title>Primary Card Title</Card.Title>
+            <Card.Title>Italian Cuisine</Card.Title>
             <Card.Text>
-               Some quick example text to build on the card title and make up the bulk
-               of the card's content.
             </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
          </Card.Body>
          </Card>
          <br />
          <Card border="secondary" style={{ width: '18rem' }}>
-         <Card.Header>Header</Card.Header>
+         <Card.Header>Vietnamese Cuisine</Card.Header>
          <Card.Body>
-            <Card.Title>Secondary Card Title</Card.Title>
+            <Card.Title>Vietnamese Cuisine</Card.Title>
             <Card.Text>
-               Some quick example text to build on the card title and make up the bulk
-               of the card's content.
             </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
          </Card.Body>
          </Card>
          <br />
          <Card border="success" style={{ width: '18rem' }}>
-         <Card.Header>Header</Card.Header>
+         <Card.Header>Korean BBQ Cuisine</Card.Header>
          <Card.Body>
-            <Card.Title>Success Card Title</Card.Title>
+            <Card.Title>Korean BBQ Cuisine</Card.Title>
             <Card.Text>
-               Some quick example text to build on the card title and make up the bulk
-               of the card's content.
             </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
          </Card.Body>
          </Card>
          <br />
       </CardColumns>
       <CardColumns>
-         <Card border="primary" style={{ width: '18rem' }}>
-         <Card.Header>Header</Card.Header>
+      <Card border="danger" style={{ width: '18rem' }}>
+         <Card.Header>Indian Cuisine</Card.Header>
          <Card.Body>
-            <Card.Title>Primary Card Title</Card.Title>
+            <Card.Title>Indian Cuisine</Card.Title>
             <Card.Text>
-               Some quick example text to build on the card title and make up the bulk
-               of the card's content.
             </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
          </Card.Body>
          </Card>
          <br />
-         <Card border="secondary" style={{ width: '18rem' }}>
-         <Card.Header>Header</Card.Header>
-         <Card.Body>
-            <Card.Title>Secondary Card Title</Card.Title>
+         <Card border="info" style={{ width: '18rem' }}>
+        <Card.Header>Mexican Cuisine</Card.Header>
+          <Card.Body>
+            <Card.Title>Mexican Cuisine</Card.Title>
             <Card.Text>
-               Some quick example text to build on the card title and make up the bulk
-               of the card's content.
             </Card.Text>
-         </Card.Body>
-         </Card>
-         <br />
-         <Card border="success" style={{ width: '18rem' }}>
-         <Card.Header>Header</Card.Header>
+            <Button variant="primary">Go somewhere</Button>
+          </Card.Body>
+          </Card>
+          <br />
+         <Card border="warning" style={{ width: '18rem' }}>
+         <Card.Header>Japanese Cuisine </Card.Header>
          <Card.Body>
-            <Card.Title>Success Card Title</Card.Title>
+            <Card.Title>Japanese Cuisine</Card.Title>
             <Card.Text>
-               Some quick example text to build on the card title and make up the bulk
-               of the card's content.
             </Card.Text>
+            <Button variant="primary">Go somewhere</Button>
          </Card.Body>
          </Card>
          <br />
