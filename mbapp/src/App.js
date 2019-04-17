@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './NavBar/NavBar';
 import FoodThemes from './FoodThemes/FoodThemes';
+import firebase, { auth, provider } from "./firebase.js"
+
 
 class App extends Component {
   render() {
