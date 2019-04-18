@@ -7,6 +7,13 @@ import firebase, { auth, provider } from "./firebase.js"
 
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      value: 0,
+      results: []
+    };
+  }
   render() {
     return (
       <div>
@@ -15,7 +22,9 @@ class App extends Component {
         <div> . </div>
         <div> . </div>
         <FoodThemes/>
-        <p>Work in progress.</p>
+        {/* <div visibility={this.state.visible}> <p>Work in progress.</p></div> */}
+
+        <div><p>Work in progress.</p></div>
       </div>
     );
   }

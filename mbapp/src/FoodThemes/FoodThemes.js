@@ -15,7 +15,7 @@ return (
             <Card.Title>Italian Cuisine</Card.Title>
             <Card.Text>
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">Get recipe!</Button>
          </Card.Body>
          </Card>
          <br />
@@ -25,7 +25,7 @@ return (
             <Card.Title>Vietnamese Cuisine</Card.Title>
             <Card.Text>
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">Get recipe!</Button>
          </Card.Body>
          </Card>
          <br />
@@ -35,7 +35,7 @@ return (
             <Card.Title>Korean BBQ Cuisine</Card.Title>
             <Card.Text>
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">Get recipe!</Button>
          </Card.Body>
          </Card>
          <br />
@@ -47,7 +47,7 @@ return (
             <Card.Title>Indian Cuisine</Card.Title>
             <Card.Text>
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">Get recipe!</Button>
          </Card.Body>
          </Card>
          <br />
@@ -57,7 +57,7 @@ return (
             <Card.Title>Mexican Cuisine</Card.Title>
             <Card.Text>
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">Get recipe!</Button>
           </Card.Body>
           </Card>
           <br />
@@ -67,7 +67,7 @@ return (
             <Card.Title>Japanese Cuisine</Card.Title>
             <Card.Text>
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <Button variant="primary">Get recipe!</Button>
          </Card.Body>
          </Card>
          <br />
