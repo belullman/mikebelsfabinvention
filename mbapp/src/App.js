@@ -17,26 +17,25 @@ class App extends Component {
     };
   }
 
-  getRecipes = () => {
+  getRecipes = (theme) => {
     // let catSearch = prompt("What do u wanna search, bich?");
     axios
-      .get("https://images-api.nasa.gov/search?q=cat")
+      .get("https://www.themealdb.com/api/json/v1/1/filter.php?a=" + theme)
       .then(response => { 
         // console.log(response.data.collection.items[4].links[0].href)
-        if (this.state.user != null){
-          let pics =  response.data.collection.items
-          pics.forEach(pic => {
-            if (pic.links) {
-              this.addPic(pic.links[0].href)
-            }
-          });
-        }
-        console.log("it worked!!!")
+ 
+       // let pics =  response.data.collection.items
+       // pics.forEach(pic => {
+        //  if (pic.links) {
+        //    console.log(pic.links[0].href)
+        //  }
+        //});
+        //console.log("it worked!!!")
+        console.log(response.data.meals);
       })
       .catch(error => { 
         console.log(error);
       });
-      alert("you are not logged in!")
   };
 
   render() {
@@ -46,8 +45,9 @@ class App extends Component {
         <div> . </div>
         <div> . </div>
         <div> . </div>
-        <FoodThemes/>
+        <FoodThemes getRecipes = {this.getRecipes}/>
         {/* <div visibility={this.state.visible}> <p>Work in progress.</p></div> */}
+        {/* <button onClick = {() => this.getRecipes()}>get a recipe bich</button> */}
 
         <div><p>Work in progress.</p></div>
       </div>
