@@ -13,7 +13,8 @@ class App extends Component {
     super(props);
     this.state = {
       value: 0,
-      results: []
+      results: [],
+      pictures: []
     };
   }
 
@@ -24,14 +25,15 @@ class App extends Component {
       .then(response => { 
         // console.log(response.data.collection.items[4].links[0].href)
  
-       // let pics =  response.data.collection.items
-       // pics.forEach(pic => {
-        //  if (pic.links) {
-        //    console.log(pic.links[0].href)
-        //  }
-        //});
-        //console.log("it worked!!!")
-        console.log(response.data.meals);
+       let recipe = response.data.meals
+       recipe.forEach(rec => {
+         if (rec.meals) {
+           this.setState({pictures: rec.meals})
+          //  console.log(rec.meals[0])
+         }
+        });
+        this.setState({pictures: response.data.meals})
+        console.log(response.data.meals[0].strMealThumb);
       })
       .catch(error => { 
         console.log(error);
@@ -39,17 +41,41 @@ class App extends Component {
   };
 
   render() {
+    let myRecipes  = [];
+    myRecipes = this.state.pictures;
+    let images = [];
+    if (myRecipes.length > 1) {
+      images = myRecipes.map(r => {
+        if (r){
+          // console.log(r);
+          return (
+            <div>
+              <img src = {r.strMealThumb} />
+              <br></br>
+            </div>
+          )
+        }
+      });
+    };
+
+
+
     return (
       <div>
         <NavBar/>
         <div> . </div>
         <div> . </div>
-        <div> . </div>
+        <div style={{ color: 'white' }}> . </div>
         <FoodThemes getRecipes = {this.getRecipes}/>
         {/* <div visibility={this.state.visible}> <p>Work in progress.</p></div> */}
-        {/* <button onClick = {() => this.getRecipes()}>get a recipe bich</button> */}
-
-        <div><p>Work in progress.</p></div>
+        {/* <button onClick = {() => this.getRecipes("Mexican")}>get a recipe bich</button> */}
+        {/* <img src = {this.state.pictures} />; */}
+        <center> 
+          <div> 
+            {images[Math.floor(Math.random() * images.length)]}
+          </div>
+        </center>
+        {/* <div><p>Work in progress.</p></div> */}
       </div>
     );
   }
